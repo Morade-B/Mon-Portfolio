@@ -169,7 +169,7 @@ export const projects: Project [] = [
 
         •  Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML.
 
-     [  HTML, CSS  ]`,
+     [  HTML, CSS  ]` ,
    
     link: "https://morade-b.github.io/Projet-1-Riding-Cities/",
     githubLink:"https://github.com/Morade-B/Projet-1-Riding-Cities.git"
