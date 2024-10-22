@@ -27,7 +27,7 @@ export default function WorkShowcase({
           </div>
           <DateRange date={experience.years} />
         </div>
-        <p className="text-sm text-muted-foreground pb-2">
+        <p className="text-sm text-muted-foreground pb-2" style={{ whiteSpace: 'pre-line' }}>
           {experience.description}
         </p>
         {whetherlast ? <></> : <Separator />}

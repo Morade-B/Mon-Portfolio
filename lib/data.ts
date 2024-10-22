@@ -21,6 +21,12 @@ import {
   SiFlutter,
   SiHeroku,
   SiTailwindcss,
+  SiSwagger,
+  SiGithub,
+  SiFigma,
+  SiSass,
+  SiReactrouter,
+  SiSlack,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
@@ -49,10 +55,7 @@ export const skills = [
     icon: SiRedux,
     text: "Redux",
   },
-  {
-    icon: SiFlutter,
-    text: "Flutter",
-  },
+  
   {
     icon: SiHtml5,
     text: "HTML5",
@@ -69,30 +72,12 @@ export const skills = [
     icon: SiExpress,
     text: "Express",
   },
-  {
-    icon: SiPython,
-    text: "Python",
-  },
-  {
-    icon: BiLogoPostgresql,
-    text: "PostgreSQL",
-  },
+  
   {
     icon: SiMongodb,
     text: "MongoDB",
   },
-  {
-    icon: SiAmazonaws,
-    text: "AWS",
-  },
-  {
-    icon: SiHeroku,
-    text: "Heroku",
-  },
-  {
-    icon: SiSupabase,
-    text: "Supabase",
-  },
+  
   {
     icon: SiFirebase,
     text: "Firebase",
@@ -102,6 +87,31 @@ export const skills = [
     text: "Git",
   },
   {
+    icon: SiSwagger,
+    text: "Swagger"
+  },
+  {
+    icon: SiGithub,
+    text: "GitHub"
+  },
+  {
+    icon: SiFigma,
+    text: "Figma"
+  },
+  {
+    icon: SiSass,
+    text: "Sass"
+  },
+  {
+    icon: SiReactrouter,
+    text: "React-Router"
+  },
+  {
+    icon: SiSlack,
+    text: "Slack"
+  },
+
+  /*{
     icon: SiDocker,
     text: "Docker",
   },
@@ -117,46 +127,171 @@ export const skills = [
     icon: SiMui,
     text: "MUI",
   },
+  {
+    icon: SiFlutter,
+    text: "Flutter",
+  },
+  {
+    icon: SiAmazonaws,
+    text: "AWS",
+  },
+  {
+    icon: SiHeroku,
+    text: "Heroku",
+  },
+  {
+    icon: SiSupabase,
+    text: "Supabase",
+  },
+  {
+    icon: SiPython,
+    text: "Python",
+  },
+  {
+    icon: BiLogoPostgresql,
+    text: "PostgreSQL",
+  },*/
 ];
 
 export interface Project {
   title: string;
   description: string;
   link: string;
+  githubLink?: string; // Le lien vers le repo GitHub
 }
 
-export const projects: Project[] = [
+export const projects: Project [] = [
   {
-    title: "Project 1",
-    description: "Give a short description about project 1",
-    link: "https://github.com/",
+    title: "Riding-Cities",
+    description: `Riding Cities est une association sportive qui promeut le skate en région parisienne. L'association souhaite améliorer son site internet.
+    
+    Les compétences acquises :
+
+        •  Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML.
+
+     [  HTML, CSS  ]`,
+   
+    link: "https://morade-b.github.io/Projet-1-Riding-Cities/",
+    githubLink:"https://github.com/Morade-B/Projet-1-Riding-Cities.git"
   },
   {
-    title: "Project 2",
-    description: "Give a short description about project 2",
-    link: "https://github.com/",
+    title: "Booki",
+    description: `Booki est une start-up qui souhaite permettre aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix.
+    
+    Les compétences acquises :
+
+        •  Installer un environnement de développement front-end
+        •  Implémenter une interface responsive avec HTML et CSS.
+        •  Intégrer du contenu conformément à une maquette avec HTML et CSS.
+
+     [  HTML, CSS, Responsive, VSCode, Figma  ]`,
+   
+    link: "  https://morade-b.github.io/Projet-Booki/",
+    githubLink:"https://github.com/Morade-B/Projet-Booki.git"
   },
   {
-    title: "Project 3",
-    description: "Give a short description about project 3",
-    link: "https://github.com/",
+    title: " Print-it-JS",
+    description: `Print It est une petite entreprise familiale. Elle souhaite dynamiser son site internet en y ajoutant un carrousel.
+    
+    Les compétences acquises :
+
+        •  Programmer en utilisant les fondamentaux de JavaScript
+
+     [  HTML, CSS, JavaScript, VSCode  ]`,
+   
+    link: "https://morade-b.github.io/Print-it-JS",
+    githubLink:"https://github.com/Morade-B/Print-it-JS"
   },
   {
-    title: "Project 4",
-    description: "Give a short description about project 4",
-    link: "https://github.com/",
+    title: "Portfolio Sophie Bluel",
+    description: `Sophie Bluel est une architecte d'intérieur qui souhaite mettre en avant son travail avec un site portfolio où elle pourra elle-même les ajouter en se connectant à son interface administrateur.
+    
+    Les compétences acquises :
+
+        •  Manipuler les éléments du DOM avec JavaScript.
+        •  Gérer les événements utilisateurs avec JavaScript.
+        •  Récupérer les données utilisateurs dans le JavaScript via des formulaires.
+
+     [  HTML, CSS, JavaScript, Figma, API, Swagger  ]`,
+
+    link: "https://morade-b.github.io/Portfolio-architecte-sophie-bluel",
+    githubLink:"https://github.com/Morade-B/Portfolio-architecte-sophie-bluel"
   },
   {
-    title: "Project 5",
-    description: "Give a short description about project 5",
-    link: "https://github.com/",
+    title: "Oh My Food",
+    description: `Ohmyfood est une jeune start-up qui souhaite s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite faire sa place à Paris.
+    
+    Les compétences acquises :
+
+        •  Intégrer une maquette en mobile-first.
+        •  Mettre en œuvre des animations CSS.
+        •  Versionner son projet avec Git et Github.
+
+     [  HTML, Sass, Responsive, VSCode, Figma, Git, Github  ]`,
+
+    link: "https://morade-b.github.io/OhMyFoodProject",
+    githubLink:"https://github.com/Morade-B/OhMyFoodProject"
   },
   {
-    title: "Project 6",
-    description: "Give a short description about project 6",
-    link: "https://github.com/",
+    title: "Kasa",
+    description: `Kasa est dans le métier de la location d'appartements entre particuliers depuis maintenant 10 ans, et souhaite aujourd'hui développer une nouvelle plateforme web avec React.
+    
+    Les compétences acquises :
+
+        •  Initialiser une application avec Create React App.
+        •  Configurer la navigation entre les pages de l'application avec React Router.
+        •  Développer des éléments de l'interface d'un site web grâce à des composants React.
+        •  Développer une interface web avec Sass.
+ 
+     [  React, React-Router, Sass, Responsive, VSCode, Figma  ]`,
+
+    link: "https://kasa-projet7.vercel.app/",
+    githubLink:"https://github.com/Morade-B/Kasa-Projet7"
+  },
+  {
+    title: "Photographe Nina Carducci",
+    description: `Je propose mes services d'optimisation SEO à plusieurs clients. Et Nina Carducci, photographe expérimentée basée à Bordeaux accepte ma proposition d'optimisation de son site.
+    
+    Les compétences acquises :
+
+        •  Optimiser la performance d'un site web.
+ 
+     [  HTML, CSS, JavaScript, Responsive, SEO  ]`,
+
+    link: "https://morade-b.github.io/NinaCarducci-Projet-8/",
+    githubLink:"https://github.com/Morade-B/NinaCarducci-Projet-8"
+  },
+  {
+    title: "724events",
+    description: `L'agence d'événementielle 724events me contacte pour son site vitrine afin de reprendre le développement et débugger le travail déjà mis en place par un autre développeur.
+    
+    Les compétences acquises :
+
+        •  Débugger un site web grâce aux Chrome DevTools.
+        •  Rédiger un cahier de recette pour tester un site.
+
+     [  React, Tests, Debug, Chrome DevTools  ]`,
+
+    link: " https://724events-projet-9.vercel.app/",
+    githubLink:"https://github.com/Morade-B/724events-projet-9"
+  },
+  {
+    title: "Argent Bank",
+    description: `J'intègre Argent Bank, une nouvelle banque en ligne qui souhaite que j'implémente le front-end de son application en utilisant React.
+  
+  Les compétences acquises :
+
+      •  Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front.
+      •  Configurer des routes API pour la communication client / serveur.
+      •  Afficher les données du back end sur l'interface via des appels API.
+
+   [  React, React-Router, Sass, Redux, API, Swagger, Responsive  ]`,
+
+    link: "https://morade-b.github.io/ArgentBank-projet-11/",
+    githubLink:"https://github.com/Morade-B/ArgentBank-projet-11"
   },
 ];
+
 
 export interface WorkExperience {
   company: string;
@@ -168,53 +303,65 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    company: "Company 3",
-    logo: "/company-logo.png",
-    position: "Company 3 Position",
-    description: "Write briefly on your experience working at Company 3.",
-    years: "Apr, 2022 - Aug, 2023",
+    company: "Intégrateur Web Chez OpenClassrooms ",
+    logo: "/formation.png",
+    position: "Formation",
+    description: `  •  Créer une application web complète et responsive pour permettre à l’entreprise ou au client de vendre ses produits et services en ligne, sur tous types d’appareils.
+                    •  Dynamiser des pages web pour mieux mettre en valeur les produits et service de l’entreprise ou du client.
+                    •  Créer des interfaces communiquant avec le back-end du site pour élaborer des applications dynamiques et permettre aux clients de s’identifier sur le site.
+                    •  Optimiser les performances et réaliser la maintenance de sites web déjà existants pour permettre leur fonctionnement optimal et une bonne visibilité sur les moteurs de recherche.
+                    •  Gérer un projet web de A à Z : du chiffrage et découpage des tâches du projet à la présentation de la solution, en passant par la rédaction des spécifications techniques...`,
+    years: "Fév, 2024 - Nov, 2024",
   },
   {
-    company: "Company 2",
-    logo: "/company-logo.png",
-    position: "Company 2 Position",
-    description: "Write briefly on your experience working at Company 2.",
-    years: "Jan, 2020 - Mar, 2022",
+    company: "AFPA",
+    logo: "/formation.png",
+    position: "Formation",
+    description: "Technicien d'intervention en froid commercial et climatisation.",
+    years: "Déc, 2021 - Sep, 2022",
   },
   {
-    company: "Company 1",
-    logo: "/company-logo.png",
-    position: "Company 1 Position",
-    description: "Write briefly on your experience working at Company 1.",
-    years: "Aug, 2018 - Sep, 2018",
+    company: "SNCF",
+    logo: "/formation.png",
+    position: "Employé",
+    description: "J'ai travaillé en tant qu'Opérateur de circulation.",
+    years: "Sep, 2014 - Jul, 2015",
   },
   {
-    company: "Uni Name",
-    logo: "/company-logo.png",
-    position: "Student",
+    company: "Université ",
+    logo: "/formation.png",
+    position: "Étudiant ",
+    description: "Durant ma periode a l'universit j'ai suivi un DUT Génie Eléctrique Informatique Industrielle",
+    years: "Sep, 2013 - Jun, 2014",
+  },
+  {
+    company: "Baccalauréat",
+    logo: "/formation.png",
+    position: "Étudiant",
     description:
-      "Write briefly about your university experience (degree, subject, etc.)",
-    years: "Aug, 2015 - Jun, 2019",
+      "J'ai obtenu un bac Scientifique Option Sciences de l'Ingenieur ",
+    years: "Sep, 2012 - Jun, 2013",
   },
 ];
 
 export const aboutYou = {
-  name: "Your Name",
+  name: "Morade.B",
   description:
-    "👋 Hi, I'm Random Person. Developer. I'm passionate about.... This is a short description about yourself.... goes in the left sidebar of the landing page.",
-  yearsOfExperience: "x years",
-  location: "Your Place",
-  email: "email@example.com",
+    `👋 Je suis un jeune développeur web spécialisé dans le front-end. 
+    J'ai suivi une formation intensive de 9 mois chez OpenClassrooms en tant qu'intégrateur web, ce qui m'a permis d'acquérir des compétences équivalentes à un diplôme de niveau Bac+2...Depuis mon plus jeune âge, je suis passionné par l'informatique, et je souhaite transformer cette passion en une carrière... Mon objectif est de continuer à développer mes compétences et mes connaissances dans ce vaste univers qu'est l'informatique... Je suis ouvert aux opportunités d'emploi et aux projets futurs dans le domaine...N'hésitez pas à me contacter si vous êtes à la recherche d'un développeur web enthousiaste et motivé pour rejoindre votre équipe ou collaborer sur un projet...Je suis impatient de contribuer à votre succès.`,
+  yearsOfExperience: "Junior",
+  location: "Paris",
+  email: "morade.baghloul@gmail.com",
 };
 
-export const logoText = "@yourname";
+export const logoText = "Morade BAGHLOUL";
 
 export const marketingHeadlines = {
-  mainHeadline: "This is the MAIN headline.",
-  subHeadline: "Bottom. Sub. Headline.",
+  mainHeadline: "Bienvenue sur mon portfolio ! Découvrez mes compétences et les projets que j'ai réalisés.",
+  subHeadline: "Mes qualités : Grande capacité d'autonomie, organisé, curieux, déterminé et toujours souriant."
 };
 
 export const websiteMetadata = {
-  title: "Your Name | Designation",
-  description: "👋 Hey, Random Person here. Welcome to my portflio/blog.",
+  title: "Mon Portfolio",
+  description: "👋 Salut, Bienvenue sur mon portfolio.",
 };

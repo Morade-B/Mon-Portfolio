@@ -1,3 +1,6 @@
+
+"use client"; // Ajout de cette directive pour le rendre client-side
+import { useState } from "react"; // Importer useState
 import ActionButton from "@/components/action-button";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -12,12 +15,18 @@ import {
   WorkExperience,
   aboutYou,
   marketingHeadlines,
-  projects,
+  projects, // Liste de tous les projets
   skills,
   workExperiences,
 } from "@/lib/data";
 
 export default function Home() {
+  const [visibleProjects, setVisibleProjects] = useState(3); // Afficher 3 projets par défaut
+
+  const handleShowMoreProjects = () => {
+    setVisibleProjects((prevCount) => prevCount + 3); // Afficher 3 projets supplémentaires
+  };
+
   return (
     <div className="md:max-w-3xl mx-auto md:mt-8 ">
       <Navbar />
@@ -38,16 +47,16 @@ export default function Home() {
             <div className="flex justify-between">
               <ActionButton actionText="Hire me" />
               <div className="space-y-1">
+                <p className="text-xs text-muted-foreground">Experience</p>
                 <h3 className="font-medium leading-none">
                   {aboutYou.yearsOfExperience}
                 </h3>
-                <p className="text-xs text-muted-foreground">Experience</p>
               </div>
               <div className="space-y-1">
+                <p className="text-xs text-muted-foreground">Location</p>
                 <h3 className="font-medium leading-none">
                   {aboutYou.location}
                 </h3>
-                <p className="text-xs text-muted-foreground">Location</p>
               </div>
             </div>
             <div className="space-y-1">
@@ -60,31 +69,39 @@ export default function Home() {
                   />
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground">Tech stack</p>
+              <p className="text-xs text-muted-foreground">Mes Compétences</p>
             </div>
           </section>
           {/* Projects */}
           <section id="projects" key="projects">
-            <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
-            <div>
-              <div className="space-y-5 mt-5">
-                {projects.map((project: Project) => (
-                  <ProjectShowcase key={project.title} project={project} />
-                ))}
-              </div>
+            <h2 className="text-2xl font-semibold tracking-tight">Projets</h2>
+            <div className="space-y-5 mt-5">
+              {/* Afficher uniquement les projets visibles */}
+              {projects.slice(0, visibleProjects).map((project: Project) => (
+                <ProjectShowcase key={project.title} project={project} />
+              ))}
             </div>
+            {/* Bouton "Voir plus de projets" */}
+            {visibleProjects < projects.length && (
+              <button
+                onClick={handleShowMoreProjects}
+                className="mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-600 transition-colors"
+              >
+                Voir plus de projets
+              </button>
+            )}
           </section>
           {/* Work */}
           <section id="work" key="work">
-            <h2 className="text-2xl font-semibold tracking-tight">Work</h2>
-            <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow">
+            <h2 className="text-2xl font-semibold tracking-tight">Formation</h2>
+            <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow max-h-[370px] overflow-y-auto">
               <div className="p-6 space-y-6">
                 {workExperiences.map(
                   (experience: WorkExperience, index: number) => (
                     <WorkShowcase
                       key={experience.company}
                       experience={experience}
-                      whetherlast={workExperiences.length == index + 1}
+                      whetherlast={workExperiences.length === index + 1}
                     />
                   )
                 )}
@@ -96,8 +113,11 @@ export default function Home() {
             <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
             <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow">
               <p className="p-6 text-sm text-muted-foreground">
-                Best way to reach me is through:{" "}
-                <a href={`mailto:${aboutYou.email}`}>{aboutYou.email}</a>
+                La meilleure façon de me joindre est de passer par:{" "}
+                <a href={`mailto:${aboutYou.email}`}>
+                  <br />
+                  Cliquez ici pour envoyer un mail
+                </a>
               </p>
             </div>
           </section>
@@ -107,3 +127,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -3,7 +3,7 @@
 import { Button } from "./ui/button";
 import Logo from "./logo";
 import { ModeToggle } from "./mode-toggle";
-import { Home, Briefcase, Mail, Presentation } from "lucide-react";
+import { Home, Briefcase, Mail, Presentation, Download } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {
@@ -25,7 +25,7 @@ export default function Navbar() {
           className="ml-auto h-8"
         >
           <Home className=" h-4 w-4" />
-          <span className="hidden md:block ml-2">Home</span>
+          <span className="hidden md:block ml-2">Accueil</span>
         </Button>
         <Button
           onClick={() => navigateTo("/#projects")}
@@ -34,7 +34,7 @@ export default function Navbar() {
           className="ml-auto h-8"
         >
           <Presentation className=" h-4 w-4" />
-          <span className="hidden md:block ml-2">Projects</span>
+          <span className="hidden md:block ml-2">Projets</span>
         </Button>
         <Button
           onClick={() => navigateTo("/#work")}
@@ -43,7 +43,7 @@ export default function Navbar() {
           className="ml-auto h-8"
         >
           <Briefcase className=" h-4 w-4" />
-          <span className="hidden md:block ml-2">Work</span>
+          <span className="hidden md:block ml-2">Formation</span>
         </Button>
         <Button
           onClick={() => navigateTo("/#contact")}
@@ -53,6 +53,19 @@ export default function Navbar() {
         >
           <Mail className=" h-4 w-4" />
           <span className="hidden md:block ml-2">Contact</span>
+        </Button>
+        {/* Bouton pour télécharger le CV */}
+        <Button
+          onClick={() => {
+            window.open("/cv.docx", "_blank");
+          }}
+          variant="outline"
+          size="sm"
+          className="ml-auto h-8"
+         
+        >
+          <Download className=" h-4 w-4" />
+          <span className="hidden md:block ml-2">CV</span>
         </Button>
         <ModeToggle />
       </div>
