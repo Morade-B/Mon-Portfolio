@@ -59,7 +59,9 @@ export default function Home() {
                 </h3>
               </div>
             </div>
+           
             <div className="space-y-1">
+            <h2 className="text-2xl font-semibold tracking-tight">Compétences</h2>
               <div className="space-y-2">
                 {skills.map((skill) => (
                   <SkillOutline
@@ -69,7 +71,7 @@ export default function Home() {
                   />
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground">Mes Compétences</p>
+            
             </div>
           </section>
           {/* Projects */}
@@ -94,7 +96,7 @@ export default function Home() {
           {/* Work */}
           <section id="work" key="work">
             <h2 className="text-2xl font-semibold tracking-tight">Formation</h2>
-            <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow max-h-[370px] overflow-y-auto">
+            
               <div className="p-6 space-y-6">
                 {workExperiences.map(
                   (experience: WorkExperience, index: number) => (
@@ -106,7 +108,7 @@ export default function Home() {
                   )
                 )}
               </div>
-            </div>
+            
           </section>
           {/* Contact */}
           <section id="contact" key="contact">

@@ -30,6 +30,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
+
 export const skills = [
   {
     icon: SiTypescript,
@@ -111,10 +112,11 @@ export const skills = [
     text: "Slack"
   },
 
-  /*{
+  {
     icon: SiDocker,
     text: "Docker",
   },
+  /*
   {
     icon: SiPrisma,
     text: "Prisma",
@@ -152,7 +154,7 @@ export const skills = [
     text: "PostgreSQL",
   },*/
 ];
-
+/*https://mon-portfolio1.vercel.app/*/
 export interface Project {
   title: string;
   description: string;
@@ -160,77 +162,48 @@ export interface Project {
   githubLink?: string; // Le lien vers le repo GitHub
 }
 
-export const projects: Project [] = [
+export const projects: Project[] = [
   {
-    title: "Riding-Cities",
-    description: `Riding Cities est une association sportive qui promeut le skate en région parisienne. L'association souhaite améliorer son site internet.
+    title: "Argent Bank",
+    description: `J'intègre Argent Bank, une nouvelle banque en ligne qui souhaite que j'implémente le front-end de son application en utilisant React.
     
     Les compétences acquises :
 
-        •  Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML.
+        •  Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front.
+        •  Configurer des routes API pour la communication client / serveur.
+        •  Afficher les données du back end sur l'interface via des appels API.
 
-     [  HTML, CSS  ]`,
-   
-    link: "https://morade-b.github.io/Projet-1-Riding-Cities/",
-    githubLink:"https://github.com/Morade-B/Projet-1-Riding-Cities.git"
+     [  React, React-Router, Sass, Redux, API, Swagger, Responsive  ]`,
+     
+    link: "https://morade-b.github.io/ArgentBank-projet-11/",
+    githubLink: "https://github.com/Morade-B/ArgentBank-projet-11"
   },
   {
-    title: "Booki",
-    description: `Booki est une start-up qui souhaite permettre aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix.
+    title: "724events",
+    description: `L'agence d'événementielle 724events me contacte pour son site vitrine afin de reprendre le développement et débugger le travail déjà mis en place par un autre développeur.
     
     Les compétences acquises :
 
-        •  Installer un environnement de développement front-end
-        •  Implémenter une interface responsive avec HTML et CSS.
-        •  Intégrer du contenu conformément à une maquette avec HTML et CSS.
+        •  Débugger un site web grâce aux Chrome DevTools.
+        •  Rédiger un cahier de recette pour tester un site.
 
-     [  HTML, CSS, Responsive, VSCode, Figma  ]`,
-   
-    link: "  https://morade-b.github.io/Projet-Booki/",
-    githubLink:"https://github.com/Morade-B/Projet-Booki.git"
+     [  React, Tests, Debug, Chrome DevTools  ]`,
+
+    link: "https://724events-projet-9.vercel.app/",
+    githubLink: "https://github.com/Morade-B/724events-projet-9"
   },
   {
-    title: " Print-it-JS",
-    description: `Print It est une petite entreprise familiale. Elle souhaite dynamiser son site internet en y ajoutant un carrousel.
+    title: "Photographe Nina Carducci",
+    description: `Je propose mes services d'optimisation SEO à plusieurs clients. Et Nina Carducci, photographe expérimentée basée à Bordeaux accepte ma proposition d'optimisation de son site.
     
     Les compétences acquises :
 
-        •  Programmer en utilisant les fondamentaux de JavaScript
+        •  Optimiser la performance d'un site web.
+ 
+     [  HTML, CSS, JavaScript, Responsive, SEO  ]`,
 
-     [  HTML, CSS, JavaScript, VSCode  ]`,
-   
-    link: "https://morade-b.github.io/Print-it-JS",
-    githubLink:"https://github.com/Morade-B/Print-it-JS"
-  },
-  {
-    title: "Portfolio Sophie Bluel",
-    description: `Sophie Bluel est une architecte d'intérieur qui souhaite mettre en avant son travail avec un site portfolio où elle pourra elle-même les ajouter en se connectant à son interface administrateur.
-    
-    Les compétences acquises :
-
-        •  Manipuler les éléments du DOM avec JavaScript.
-        •  Gérer les événements utilisateurs avec JavaScript.
-        •  Récupérer les données utilisateurs dans le JavaScript via des formulaires.
-
-     [  HTML, CSS, JavaScript, Figma, API, Swagger  ]`,
-
-    link: "https://morade-b.github.io/Portfolio-architecte-sophie-bluel",
-    githubLink:"https://github.com/Morade-B/Portfolio-architecte-sophie-bluel"
-  },
-  {
-    title: "Oh My Food",
-    description: `Ohmyfood est une jeune start-up qui souhaite s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite faire sa place à Paris.
-    
-    Les compétences acquises :
-
-        •  Intégrer une maquette en mobile-first.
-        •  Mettre en œuvre des animations CSS.
-        •  Versionner son projet avec Git et Github.
-
-     [  HTML, Sass, Responsive, VSCode, Figma, Git, Github  ]`,
-
-    link: "https://morade-b.github.io/OhMyFoodProject",
-    githubLink:"https://github.com/Morade-B/OhMyFoodProject"
+    link: "https://morade-b.github.io/NinaCarducci-Projet-8/",
+    githubLink: "https://github.com/Morade-B/NinaCarducci-Projet-8"
   },
   {
     title: "Kasa",
@@ -246,50 +219,79 @@ export const projects: Project [] = [
      [  React, React-Router, Sass, Responsive, VSCode, Figma  ]`,
 
     link: "https://kasa-projet7.vercel.app/",
-    githubLink:"https://github.com/Morade-B/Kasa-Projet7"
+    githubLink: "https://github.com/Morade-B/Kasa-Projet7"
   },
   {
-    title: "Photographe Nina Carducci",
-    description: `Je propose mes services d'optimisation SEO à plusieurs clients. Et Nina Carducci, photographe expérimentée basée à Bordeaux accepte ma proposition d'optimisation de son site.
+    title: "Oh My Food",
+    description: `Ohmyfood est une jeune start-up qui souhaite s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite faire sa place à Paris.
     
     Les compétences acquises :
 
-        •  Optimiser la performance d'un site web.
- 
-     [  HTML, CSS, JavaScript, Responsive, SEO  ]`,
+        •  Intégrer une maquette en mobile-first.
+        •  Mettre en œuvre des animations CSS.
+        •  Versionner son projet avec Git et Github.
 
-    link: "https://morade-b.github.io/NinaCarducci-Projet-8/",
-    githubLink:"https://github.com/Morade-B/NinaCarducci-Projet-8"
+     [  HTML, Sass, Responsive, VSCode, Figma, Git, Github  ]`,
+
+    link: "https://morade-b.github.io/OhMyFoodProject",
+    githubLink: "https://github.com/Morade-B/OhMyFoodProject"
   },
   {
-    title: "724events",
-    description: `L'agence d'événementielle 724events me contacte pour son site vitrine afin de reprendre le développement et débugger le travail déjà mis en place par un autre développeur.
+    title: "Portfolio Sophie Bluel",
+    description: `Sophie Bluel est une architecte d'intérieur qui souhaite mettre en avant son travail avec un site portfolio où elle pourra elle-même les ajouter en se connectant à son interface administrateur.
     
     Les compétences acquises :
 
-        •  Débugger un site web grâce aux Chrome DevTools.
-        •  Rédiger un cahier de recette pour tester un site.
+        •  Manipuler les éléments du DOM avec JavaScript.
+        •  Gérer les événements utilisateurs avec JavaScript.
+        •  Récupérer les données utilisateurs dans le JavaScript via des formulaires.
 
-     [  React, Tests, Debug, Chrome DevTools  ]`,
+     [  HTML, CSS, JavaScript, Figma, API, Swagger  ]`,
 
-    link: " https://724events-projet-9.vercel.app/",
-    githubLink:"https://github.com/Morade-B/724events-projet-9"
+    link: "https://morade-b.github.io/Portfolio-architecte-sophie-bluel",
+    githubLink: "https://github.com/Morade-B/Portfolio-architecte-sophie-bluel"
   },
   {
-    title: "Argent Bank",
-    description: `J'intègre Argent Bank, une nouvelle banque en ligne qui souhaite que j'implémente le front-end de son application en utilisant React.
-  
-  Les compétences acquises :
+    title: "Print-it-JS",
+    description: `Print It est une petite entreprise familiale. Elle souhaite dynamiser son site internet en y ajoutant un carrousel.
+    
+    Les compétences acquises :
 
-      •  Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front.
-      •  Configurer des routes API pour la communication client / serveur.
-      •  Afficher les données du back end sur l'interface via des appels API.
+        •  Programmer en utilisant les fondamentaux de JavaScript
 
-   [  React, React-Router, Sass, Redux, API, Swagger, Responsive  ]`,
+     [  HTML, CSS, JavaScript, VSCode  ]`,
 
-    link: "https://morade-b.github.io/ArgentBank-projet-11/",
-    githubLink:"https://github.com/Morade-B/ArgentBank-projet-11"
+    link: "https://morade-b.github.io/Print-it-JS",
+    githubLink: "https://github.com/Morade-B/Print-it-JS"
   },
+  {
+    title: "Booki",
+    description: `Booki est une start-up qui souhaite permettre aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix.
+    
+    Les compétences acquises :
+
+        •  Installer un environnement de développement front-end
+        •  Implémenter une interface responsive avec HTML et CSS.
+        •  Intégrer du contenu conformément à une maquette avec HTML et CSS.
+
+     [  HTML, CSS, Responsive, VSCode, Figma  ]`,
+
+    link: "https://morade-b.github.io/Projet-Booki/",
+    githubLink: "https://github.com/Morade-B/Projet-Booki.git"
+  },
+  {
+    title: "Riding-Cities",
+    description: `Riding Cities est une association sportive qui promeut le skate en région parisienne. L'association souhaite améliorer son site internet.
+    
+    Les compétences acquises :
+
+        •  Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML.
+
+     [  HTML, CSS  ]`,
+
+    link: "https://morade-b.github.io/Projet-1-Riding-Cities/",
+    githubLink: "https://github.com/Morade-B/Projet-1-Riding-Cities.git"
+  }
 ];
 
 
@@ -306,11 +308,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Intégrateur Web Chez OpenClassrooms ",
     logo: "/formation.png",
     position: "Formation",
-    description: `  •  Créer une application web complète et responsive pour permettre à l’entreprise ou au client de vendre ses produits et services en ligne, sur tous types d’appareils.
-                    •  Dynamiser des pages web pour mieux mettre en valeur les produits et service de l’entreprise ou du client.
-                    •  Créer des interfaces communiquant avec le back-end du site pour élaborer des applications dynamiques et permettre aux clients de s’identifier sur le site.
-                    •  Optimiser les performances et réaliser la maintenance de sites web déjà existants pour permettre leur fonctionnement optimal et une bonne visibilité sur les moteurs de recherche.
-                    •  Gérer un projet web de A à Z : du chiffrage et découpage des tâches du projet à la présentation de la solution, en passant par la rédaction des spécifications techniques...`,
+    description: `  Diplôme de niveau Bac+2: Developpeur web junior spécialisé dans React et Next.js. ` ,
     years: "Fév, 2024 - Nov, 2024",
   },
   {
@@ -345,10 +343,13 @@ export const workExperiences: WorkExperience[] = [
 ];
 
 export const aboutYou = {
-  name: "Morade.B",
+  name: "Présentation",
   description:
-    `👋 Je suis un jeune développeur web spécialisé dans le front-end. 
-    J'ai suivi une formation intensive de 9 mois chez OpenClassrooms en tant qu'intégrateur web, ce qui m'a permis d'acquérir des compétences équivalentes à un diplôme de niveau Bac+2...Depuis mon plus jeune âge, je suis passionné par l'informatique, et je souhaite transformer cette passion en une carrière... Mon objectif est de continuer à développer mes compétences et mes connaissances dans ce vaste univers qu'est l'informatique... Je suis ouvert aux opportunités d'emploi et aux projets futurs dans le domaine...N'hésitez pas à me contacter si vous êtes à la recherche d'un développeur web enthousiaste et motivé pour rejoindre votre équipe ou collaborer sur un projet...Je suis impatient de contribuer à votre succès.`,
+    `👋 Passionné par le développement web, je suis un jeune développeur front-end spécialisé dans React et Next.js avec une solide formation d'intégrateur web, acquise lors d'un parcours intensif de 9 mois chez OpenClassrooms. Cette expérience m'a permis d'atteindre un niveau de compétences équivalent à un diplôme Bac+2 et de maîtriser les bases de l'intégration et du développement d'interfaces web modernes.\n\n
+    
+        Mon objectif est de continuer à développer mes compétences et mes connaissances, je suis ouvert aux opportunités d'emploi et aux projets futurs dans le domaine.\n\n
+        
+        N'hésitez pas à me contacter si vous êtes à la recherche d'un développeur web enthousiaste et motivé pour rejoindre votre équipe ou collaborer sur un projet. Je serais ravi de contribuer à votre réussite et d'apporter une valeur ajoutée à votre équipe.`,
   yearsOfExperience: "Junior",
   location: "Paris",
   email: "morade.baghloul@gmail.com",
@@ -357,7 +358,7 @@ export const aboutYou = {
 export const logoText = "Morade BAGHLOUL";
 
 export const marketingHeadlines = {
-  mainHeadline: "Bienvenue sur mon portfolio ! Découvrez mes compétences et les projets que j'ai réalisés.",
+  mainHeadline: "Bienvenue sur mon portfolio !",
   subHeadline: "Mes qualités : Grande capacité d'autonomie, organisé, curieux, déterminé et toujours souriant."
 };
 

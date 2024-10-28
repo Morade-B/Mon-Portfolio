@@ -8,9 +8,12 @@ export default function Sidebar() {
         {aboutYou.name}
       </p>
       {/* Description */}
-      <p className="text-sm text-muted-foreground tracking-tight">
-        {aboutYou.description}
-      </p>
+      <div className="space-y-4">
+  {aboutYou.description.split("\n\n").map((paragraph, index) => (
+    <p key={index} className="text-sm text-muted-foreground tracking-tight">{paragraph}</p>
+  ))}
+</div>
+
     </div>
   );
 }
