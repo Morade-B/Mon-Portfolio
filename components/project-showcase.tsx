@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 interface ProjectShowcaseProps {
   project: Project;
 }
-
+ 
 export default function ProjectShowcase({ project }: ProjectShowcaseProps) {
   return (
     <div

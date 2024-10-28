@@ -164,6 +164,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    
     title: "Argent Bank",
     description: `J'intègre Argent Bank, une nouvelle banque en ligne qui souhaite que j'implémente le front-end de son application en utilisant React.
     
