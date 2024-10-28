@@ -27,11 +27,65 @@ import {
   SiSass,
   SiReactrouter,
   SiSlack,
+  SiVisualstudiocode,
+  SiGooglechrome,
+  SiBugsnag,
+  SiTestinglibrary,
+  SiNotion,
+  SiPurism,
+  SiSimpleanalytics,
+  SiVite,
+  SiDatabricks,
+  
+  
+
+  
+  
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 
 export const skills = [
+  {
+    icon: SiDatabricks,
+    text: "API",
+  },
+  {
+    icon: SiPurism,
+    text: "Responsive",
+  },
+  {
+    icon: SiNotion,
+    text: "Notion",
+  },
+  {
+    icon: SiVite,
+    text: "Vite",
+  },
+  {
+    icon: SiPurism,
+    text: "Responsive",
+  },
+  {
+    icon: SiSimpleanalytics,
+    text: "SEO",
+  },
+  {
+    icon: SiTestinglibrary,
+    text: "Tests",
+  },
+  {
+    icon: SiBugsnag,
+    text: "Debug",
+  },
+  {
+    icon: SiGooglechrome,
+    text: "Chrome DevTools",
+  },
+  {
+    icon: SiVisualstudiocode,
+    text: "VSCode",
+  },
   {
     icon: SiTypescript,
     text: "TypeScript",
@@ -154,12 +208,13 @@ export const skills = [
     text: "PostgreSQL",
   },*/
 ];
-/*https://mon-portfolio1.vercel.app/*/
+
 export interface Project {
   title: string;
   description: string;
   link: string;
   githubLink?: string; // Le lien vers le repo GitHub
+  displaySkills?: string[];
 }
 
 export const projects: Project[] = [
@@ -172,9 +227,9 @@ export const projects: Project[] = [
 
         •  Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front.
         •  Configurer des routes API pour la communication client / serveur.
-        •  Afficher les données du back end sur l'interface via des appels API.
+        •  Afficher les données du back end sur l'interface via des appels API.`,
 
-     [  React, React-Router, Sass, Redux, API, Swagger, Responsive  ]`,
+    displaySkills: ["React", "React-Router", "Sass", "Redux", "API", "Swagger", "Responsive" ],
      
     link: "https://morade-b.github.io/ArgentBank-projet-11/",
     githubLink: "https://github.com/Morade-B/ArgentBank-projet-11"
@@ -186,9 +241,9 @@ export const projects: Project[] = [
     Les compétences acquises :
 
         •  Débugger un site web grâce aux Chrome DevTools.
-        •  Rédiger un cahier de recette pour tester un site.
+        •  Rédiger un cahier de recette pour tester un site.`,
 
-     [  React, Tests, Debug, Chrome DevTools  ]`,
+    displaySkills: ["React", "Tests", "Debug", "Chrome DevTools" ],
 
     link: "https://724events-projet-9.vercel.app/",
     githubLink: "https://github.com/Morade-B/724events-projet-9"
@@ -199,9 +254,9 @@ export const projects: Project[] = [
     
     Les compétences acquises :
 
-        •  Optimiser la performance d'un site web.
- 
-     [  HTML, CSS, JavaScript, Responsive, SEO  ]`,
+        •  Optimiser la performance d'un site web.`,
+
+    displaySkills: ["HTML5", "CSS3", "JavaScript", "Responsive", "SEO" ],
 
     link: "https://morade-b.github.io/NinaCarducci-Projet-8/",
     githubLink: "https://github.com/Morade-B/NinaCarducci-Projet-8"
@@ -215,9 +270,9 @@ export const projects: Project[] = [
         •  Initialiser une application avec Create React App.
         •  Configurer la navigation entre les pages de l'application avec React Router.
         •  Développer des éléments de l'interface d'un site web grâce à des composants React.
-        •  Développer une interface web avec Sass.
- 
-     [  React, React-Router, Sass, Responsive, VSCode, Figma  ]`,
+        •  Développer une interface web avec Sass.`,
+
+    displaySkills: ["React", "React-Router", "Sass", "Responsive", "Figma", "VSCode" ],
 
     link: "https://kasa-projet7.vercel.app/",
     githubLink: "https://github.com/Morade-B/Kasa-Projet7"
@@ -230,9 +285,9 @@ export const projects: Project[] = [
 
         •  Intégrer une maquette en mobile-first.
         •  Mettre en œuvre des animations CSS.
-        •  Versionner son projet avec Git et Github.
+        •  Versionner son projet avec Git et Github.`,
 
-     [  HTML, Sass, Responsive, VSCode, Figma, Git, Github  ]`,
+    displaySkills: ["HTML5", "Sass", "VSCode", "Git", "Figma", "GitHub" ],
 
     link: "https://morade-b.github.io/OhMyFoodProject",
     githubLink: "https://github.com/Morade-B/OhMyFoodProject"
@@ -245,9 +300,9 @@ export const projects: Project[] = [
 
         •  Manipuler les éléments du DOM avec JavaScript.
         •  Gérer les événements utilisateurs avec JavaScript.
-        •  Récupérer les données utilisateurs dans le JavaScript via des formulaires.
+        •  Récupérer les données utilisateurs dans le JavaScript via des formulaires.`,
 
-     [  HTML, CSS, JavaScript, Figma, API, Swagger  ]`,
+    displaySkills: ["HTML5", "CSS3", "JavaScript", "Swagger", "Figma", "API" ],
 
     link: "https://morade-b.github.io/Portfolio-architecte-sophie-bluel",
     githubLink: "https://github.com/Morade-B/Portfolio-architecte-sophie-bluel"
@@ -258,9 +313,10 @@ export const projects: Project[] = [
     
     Les compétences acquises :
 
-        •  Programmer en utilisant les fondamentaux de JavaScript
+        •  Programmer en utilisant les fondamentaux de JavaScript`,
 
-     [  HTML, CSS, JavaScript, VSCode  ]`,
+     
+    displaySkills: ["HTML5", "CSS3", "JavaScript", "VSCode" ],
 
     link: "https://morade-b.github.io/Print-it-JS",
     githubLink: "https://github.com/Morade-B/Print-it-JS"
@@ -273,9 +329,10 @@ export const projects: Project[] = [
 
         •  Installer un environnement de développement front-end
         •  Implémenter une interface responsive avec HTML et CSS.
-        •  Intégrer du contenu conformément à une maquette avec HTML et CSS.
+        •  Intégrer du contenu conformément à une maquette avec HTML et CSS.`,
 
-     [  HTML, CSS, Responsive, VSCode, Figma  ]`,
+
+    displaySkills: ["HTML5", "CSS3", "VSCode", "Figma", "Responsive" ],
 
     link: "https://morade-b.github.io/Projet-Booki/",
     githubLink: "https://github.com/Morade-B/Projet-Booki.git"
@@ -286,12 +343,13 @@ export const projects: Project[] = [
     
     Les compétences acquises :
 
-        •  Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML.
+        •  Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML. `,
 
-     [  HTML, CSS  ]`,
+    displaySkills: ["HTML5", "CSS3" ],
 
     link: "https://morade-b.github.io/Projet-1-Riding-Cities/",
     githubLink: "https://github.com/Morade-B/Projet-1-Riding-Cities.git"
+   
   }
 ];
 
@@ -306,7 +364,7 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    company: "Intégrateur Web Chez OpenClassrooms ",
+    company: "Intégrateur Web",
     logo: "/formation.png",
     position: "Formation",
     description: `  Diplôme de niveau Bac+2: Developpeur web junior spécialisé dans React et Next.js. ` ,
@@ -334,7 +392,7 @@ export const workExperiences: WorkExperience[] = [
     years: "Sep, 2013 - Jun, 2014",
   },
   {
-    company: "Baccalauréat",
+    company: "Bac",
     logo: "/formation.png",
     position: "Étudiant",
     description:

@@ -2,6 +2,8 @@
 
 import { Project } from "@/lib/data";
 import { ExternalLink } from "lucide-react";
+import SkillOutline from "@/components/skill-outline";
+import { skills } from "@/lib/data";
 
 interface ProjectShowcaseProps {
   project: Project;
@@ -28,6 +30,19 @@ export default function ProjectShowcase({ project }: ProjectShowcaseProps) {
               <br />
             </span>
           ))}</p>
+         <div className="space-y-2">
+          {project.displaySkills?.map((skill) => {
+            const skillData = skills.find(s => s.text === skill);
+            return skillData ? (
+              <SkillOutline
+                key={skillData.text}
+                Icon={skillData.icon}
+                text={skillData.text}
+              />
+            ) : null;
+          })}
+        </div>
+
 
           {/* Bouton vers GitHub */}
           {project.githubLink && (
