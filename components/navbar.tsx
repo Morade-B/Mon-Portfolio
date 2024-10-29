@@ -17,7 +17,7 @@ export default function Navbar() {
     <div className="border bg-card text-card-foreground p-3 shadow-sm md:rounded-lg flex justify-between items-center top-0 sticky z-50">
       <Logo onClick={() => navigateTo("/")} />
       {/* Navigation Menus */}
-      <div className="space-x-3 items-center">
+      <div className="sm:flex sm:items-center flex-wrap grid grid-cols-3 gap-2 sm:grid-cols-3 sm:gap-2">
         <Button
           onClick={() => navigateTo("/")}
           variant="outline"

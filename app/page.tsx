@@ -53,7 +53,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className="space-y-1">
-                <p className="text-xs text-muted-foreground">Location</p>
+                <p className="text-xs text-muted-foreground mr-2">Location</p>
                 <h3 className="font-medium leading-none">
                   {aboutYou.location}
                 </h3>
