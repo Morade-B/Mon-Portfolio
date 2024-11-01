@@ -31,8 +31,12 @@ export default function Home() {
     <div className="md:max-w-3xl mx-auto md:mt-8 ">
       <Navbar />
       <div className="flex flex-col md:flex-row my-10 mx-10 md:mx-0 space-x-0 md:space-x-10 space-y-10 md:space-y-0 ">
-        <Sidebar />
-        <div className="md:min-w-[65vh] min-w-full space-y-10">
+         {/* Sidebar: prend 1/3 de la largeur */}
+    <div className="w-full md:w-1/3">
+      <Sidebar />
+    </div>
+       
+        <div className="md:w-2/3 w-full space-y-10">
           {/* Hero */}
           <section id="home" key="home" className="space-y-5">
             <div className="text-2xl font-bold tracking-tight">
