@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* Bouton pour télécharger le CV */}
         <Button
           onClick={() => {
-            window.open("/cv.pdf", "_blank");
+            window.open("/public/cv.pdf", "_blank");
           }}
           variant="outline"
           size="sm"
