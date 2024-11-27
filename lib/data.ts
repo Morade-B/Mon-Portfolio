@@ -47,20 +47,82 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 export const skills = [
   {
-    icon: SiDatabricks,
-    text: "API",
+    icon: SiReact,
+    text: "React",
   },
   {
-    icon: SiPurism,
-    text: "Responsive",
+    icon: SiNextdotjs,
+    text: "Next",
   },
   {
-    icon: SiNotion,
-    text: "Notion",
+    icon: SiTailwindcss,
+    text: "Tailwind",
+  },
+  {
+    icon: SiRedux,
+    text: "Redux",
+  },
+  {
+    icon: SiTypescript,
+    text: "TypeScript",
+  },
+  {
+    icon: SiJavascript,
+    text: "JavaScript",
+  },
+  {
+    icon: SiReactrouter,
+    text: "React-Router"
   },
   {
     icon: SiVite,
     text: "Vite",
+  },
+  {
+    icon: SiGithub,
+    text: "GitHub"
+  },
+  {
+    icon: SiHtml5,
+    text: "HTML5",
+  },
+  {
+    icon: SiCss3,
+    text: "CSS3",
+  },
+  {
+    icon: SiSass,
+    text: "Sass"
+  },
+  {
+    icon: SiDocker,
+    text: "Docker",
+  },
+  {
+    icon: SiExpress,
+    text: "Express",
+  },
+  
+  {
+    icon: SiMongodb,
+    text: "MongoDB",
+  },
+  
+  {
+    icon: SiFirebase,
+    text: "Firebase",
+  },
+  {
+    icon: SiNodedotjs,
+    text: "Node",
+  },
+  {
+    icon: SiSwagger,
+    text: "Swagger"
+  },
+  {
+    icon: SiDatabricks,
+    text: "API",
   },
   {
     icon: SiPurism,
@@ -87,89 +149,23 @@ export const skills = [
     text: "VSCode",
   },
   {
-    icon: SiTypescript,
-    text: "TypeScript",
-  },
-  {
-    icon: SiJavascript,
-    text: "JavaScript",
-  },
-  {
-    icon: SiReact,
-    text: "React",
-  },
-  {
-    icon: SiNextdotjs,
-    text: "Next",
-  },
-  {
-    icon: SiTailwindcss,
-    text: "Tailwind",
-  },
-  {
-    icon: SiRedux,
-    text: "Redux",
-  },
-  
-  {
-    icon: SiHtml5,
-    text: "HTML5",
-  },
-  {
-    icon: SiCss3,
-    text: "CSS3",
-  },
-  {
-    icon: SiNodedotjs,
-    text: "Node",
-  },
-  {
-    icon: SiExpress,
-    text: "Express",
-  },
-  
-  {
-    icon: SiMongodb,
-    text: "MongoDB",
-  },
-  
-  {
-    icon: SiFirebase,
-    text: "Firebase",
+    icon: SiNotion,
+    text: "Notion",
   },
   {
     icon: SiGit,
     text: "Git",
   },
   {
-    icon: SiSwagger,
-    text: "Swagger"
-  },
-  {
-    icon: SiGithub,
-    text: "GitHub"
-  },
-  {
     icon: SiFigma,
     text: "Figma"
-  },
-  {
-    icon: SiSass,
-    text: "Sass"
-  },
-  {
-    icon: SiReactrouter,
-    text: "React-Router"
   },
   {
     icon: SiSlack,
     text: "Slack"
   },
 
-  {
-    icon: SiDocker,
-    text: "Docker",
-  },
+  
   /*
   {
     icon: SiPrisma,

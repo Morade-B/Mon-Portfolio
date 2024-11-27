@@ -49,7 +49,7 @@ export default function Home() {
               <Separator />
             </div>
             <div className="flex justify-between">
-              <ActionButton actionText="Hire me" />
+              <ActionButton actionText="Contactez-moi" />
               <div className="space-y-1">
                 <p className="text-xs text-muted-foreground">Experience</p>
                 <h3 className="font-medium leading-none">
