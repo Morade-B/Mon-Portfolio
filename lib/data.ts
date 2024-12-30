@@ -227,7 +227,7 @@ export const projects: Project[] = [
 
     displaySkills: ["React", "React-Router", "Sass", "Redux", "API", "Swagger", "Responsive" ],
      
-    link: "https://morade-b.github.io/ArgentBank-projet-11/",
+    link: "",
     githubLink: "https://github.com/Morade-B/ArgentBank-projet-11"
   },
   {
